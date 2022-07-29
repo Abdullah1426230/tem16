@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.container2 {
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+h1,
+h2 {
+  color: #4c545d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  color: #4c545d;
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+
+p {
+  color: #9fabb2;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+p.mainParagraph {
+  text-align: center;
+}
+
+section,
+header {
+  margin-bottom: 150px;
+}
+
+/*=============================================
+=            Header            =
+=============================================*/
+header {
+  background-image: url("../images/bg-header-desktop.png");
+  background-size: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+header img {
+  padding-bottom: 60px;
+  padding-top: 80px;
+}
+
+header h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.btns {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+
+.btns button {
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+  color: white;
+  padding: 15px 30px;
+  display: inline-block;
+  margin: 20px;
+  font-size: 16px;
+  min-width: 200px;
+  border-radius: 74px;
+  border: 0;
+  position: relative;
+}
+
+.btns button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 74px;
+  z-index: -1;
+  top: 3px;
+  left: 0;
+}
+
+.btns button:first-of-type {
+  background-color: #26baa4;
+}
+
+.btns button:first-of-type::before {
+  background-color: #156659;
+}
+
+.btns button:first-of-type:hover {
+  background-color: #67e0ce;
+}
+
+.btns button:last-of-type {
+  background-color: #6173ff;
+}
+
+.btns button:last-of-type::before {
+  background-color: #001dfa;
+}
+
+.btns button:last-of-type:hover {
+  background-color: #c7cdff;
+}
+
+@media (max-width: 768px) {
+  header {
+    background-image: url("../images/bg-header-mobile.png");
+  }
+  header h1 {
+    font-size: 32px;
+  }
+  .btns {
+    margin-top: 15px;
+  }
+  .btns button {
+    margin: 10px !important;
+  }
+}
+
+/*=====  End of Header  ======*/
+/*=============================================
+=            Section One            =
+=============================================*/
+section.one .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.one .flex .articles {
+  padding-left: 130px;
+}
+
+section.one .flex .articles img {
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+}
+
+section.one .flex .articles article {
+  margin: 30px 0;
+}
+
+@media (max-width: 1140px) {
+  section.one .flex {
+    display: block;
+    text-align: center;
+  }
+  section.one .flex img {
+    display: block;
+    margin: 10px auto;
+    width: 95%;
+    max-width: 700px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  section.one .flex article {
+    max-width: 500px;
+    margin: 30px auto !important;
+  }
+  section.one .flex .articles {
+    padding: 10px;
+  }
+}
+
+/*=====  End of Section One  ======*/
+/*=============================================
+=            Section Two            =
+=============================================*/
+section.two {
+  text-align: center;
+}
+
+section.two img {
+  display: block;
+  margin: 100px auto 0;
+}
+
+@media (max-width: 768px) {
+  section.two img {
+    margin-top: 50px;
+  }
+}
+
+/*=====  End of Section Two  ======*/
+/*=============================================
+=            Section Three            =
+=============================================*/
+section.three .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 70px;
+}
+
+section.three .container article {
+  max-width: 350px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+section.three .container article p {
+  font-size: 16px;
+}
+
+section.three .container article img {
+  margin-bottom: 25px;
+}
+
+/*=====  End of Section Three  ======*/
+/*=============================================
+=            Section Four            =
+=============================================*/
+section.four .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  section.four img {
+    display: block;
+    display: block;
+    margin: 20px auto;
+    min-width: 200px;
+  }
+}
+
+/*=====  End of Section Four  ======*/
+/*=============================================
+=            Footer            =
+=============================================*/
+footer {
+  background-color: #f5f6f8;
+  padding: 30px 15px;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .uls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  padding-left: 25px;
+}
+
+footer .uls ul li {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+footer .uls ul li:first-of-type {
+  margin-bottom: 20px;
+}
+
+footer .uls ul li:hover {
+  color: #26baa4;
+}
+
+footer .icons {
+  margin: 0 8px;
+  text-align: right;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  footer .container {
+    display: block;
+  }
+  footer .container .uls {
+    display: block;
+    padding: 0;
+    margin: 15px 0;
+  }
+  footer .container .uls ul {
+    margin: 0;
+  }
+  footer .container .uls ul li {
+    margin: 15px 0;
+  }
+  footer .container .icons {
+    text-align: center;
+    margin-top: 30px;
+  }
+  footer .container .icons img {
+    margin: 0 25px;
+  }
+}
+
+/*=====  End of Footer  ======*/
+/*# sourceMappingURL=main.css.map */
